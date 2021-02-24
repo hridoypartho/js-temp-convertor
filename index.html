@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Enter Your Site Title</title>
+    <title>Temperature-Converter</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,9 +22,22 @@
     <section class="project">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-sm-8">
+                <div class="col-sm-6">
                     <div class="project__content">
-
+                        <form class="project__content_tempCalc" id="tempCalc" onsubmit="calculateTemp(); return false">
+                            <label for="temp">Pleasr enter the temperature you'd like to convert</label>
+                            <br/>
+                            <input type="number" name="temp" id="temp">
+                            <select name="temp_diff" id="temp_diff">
+                                <option value="cel">°Calsius</option>
+                                <option value="fah">°Fahrenheit</option>
+                            </select>
+                            <br/>
+                            <input type="submit" name="temp" class="mt-4">
+                            <br/>
+                            <br/>
+                            <span id="resultcontainer"></span>
+                        </form>
                     </div>
                 </div>
             </div>

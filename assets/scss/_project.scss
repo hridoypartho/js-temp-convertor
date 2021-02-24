@@ -5,4 +5,37 @@
     justify-content: center;
     height: 100vh;
     text-align: center;
+    &__content{
+        background-color: bisque;
+        padding: 50px 20px;
+        border-radius: 5px;
+        &_tempCalc{
+            label{
+                font-size: 18px;
+                text-transform: capitalize;
+                font-weight: 500;
+                margin-bottom: 30px;
+            }
+            input{
+                border: 0;
+                width: 100px;
+                height: 30px;
+                padding: 0 8px;
+                margin-right: 5px;
+                &:focus{
+                    outline: transparent;
+                }
+            }
+            select{
+                border: 0;
+                width: 120px;
+                height: 30px;
+                padding: 0 8px;
+                margin-left: 5px;
+                &:focus{
+                    outline: transparent;
+                }
+            }
+        }
+    }
 }
